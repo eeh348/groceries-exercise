@@ -71,5 +71,15 @@ print("--------------")
 #
 #sorted_dept = sorted(dept, key=sort_by_dept)
 
-for d in dept:
-    print(d)
+unique_dept.sort()
+
+prod_dept_count  = 5
+
+for d in unique_dept:
+    matching_prods = [p for p in products if p["department"] == d]
+    matching_prod_count = len(matching_prods)
+    if matching_prod_count > 1:
+        label = " products)"
+    else:
+        label = " product)"
+    print(d.title()+ " (" + str(matching_prod_count) + str(label)) 
