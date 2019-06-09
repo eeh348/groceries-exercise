@@ -27,6 +27,8 @@ products = [
 
 prod_count = len(products)
 
+#products
+
 print("--------------")
 print("THERE ARE " + str(prod_count) + " PRODUCTS:")
 print("--------------")
@@ -40,3 +42,32 @@ sorted_products = sorted(products, key=sort_by_name)
 for p in sorted_products:
     price_usd = " (${0:.2f})".format(p["price"])
     print ("+ " + p["name"] + price_usd )
+
+#departments
+
+#arr = [1, 2, 3, 4]
+#arr2 = []
+#
+#for i in arr:
+#  arr2.append(i * 100)
+
+dept = []
+
+dept_count = len(dept)
+
+print("--------------")
+print("THERE ARE " + str(dept_count) + " DEPARTMENTS:")
+print("--------------")
+
+for p in products:
+    #print (p["department"])
+    if p["department"] not in dept:
+        dept.append(p["department"])
+
+def sort_by_dept(p):
+    return p["department"]
+
+sorted_dept = sorted(dept, key=sort_by_dept)
+
+for d in sorted_dept:
+    print(d)
