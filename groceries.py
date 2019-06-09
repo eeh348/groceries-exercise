@@ -45,12 +45,6 @@ for p in sorted_products:
 
 #departments
 
-#arr = [1, 2, 3, 4]
-#arr2 = []
-#
-#for i in arr:
-#  arr2.append(i * 100)
-
 dept = []
 
 for p in products:
@@ -65,11 +59,6 @@ dept_count = len(dept)
 print("--------------")
 print("THERE ARE " + str(dept_count) + " DEPARTMENTS:")
 print("--------------") 
-
-#def sort_by_dept(p):
-#    return p["department"]
-#
-#sorted_dept = sorted(dept, key=sort_by_dept)
 
 unique_dept.sort()
 
