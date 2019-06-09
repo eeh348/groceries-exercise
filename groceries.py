@@ -53,21 +53,23 @@ for p in sorted_products:
 
 dept = []
 
-dept_count = len(dept)
-
-print("--------------")
-print("THERE ARE " + str(dept_count) + " DEPARTMENTS:")
-print("--------------")
-
 for p in products:
     #print (p["department"])
     if p["department"] not in dept:
         dept.append(p["department"])
 
-def sort_by_dept(p):
-    return p["department"]
+unique_dept = list(set(dept))
 
-sorted_dept = sorted(dept, key=sort_by_dept)
+dept_count = len(dept)
 
-for d in sorted_dept:
+print("--------------")
+print("THERE ARE " + str(dept_count) + " DEPARTMENTS:")
+print("--------------") 
+
+#def sort_by_dept(p):
+#    return p["department"]
+#
+#sorted_dept = sorted(dept, key=sort_by_dept)
+
+for d in dept:
     print(d)
