@@ -2,8 +2,8 @@
 
 import pprint
 
-def to_usd(x):
-    price_usd = "${:,.2f}".format(x)
+def to_usd(test_price):
+    price_usd = "${:,.2f}".format(test_price)
     return price_usd
 
 
