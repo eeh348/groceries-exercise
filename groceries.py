@@ -1,6 +1,7 @@
 # groceries.py
 
 import pprint
+import pbd
 
 def to_usd(test_price):
     price_usd = "${:,.2f}".format(test_price)
@@ -80,4 +81,6 @@ if __name__ == "__main__":
             label = " products)"
         else:
             label = " product)"
-        print(d.title()+ " (" + str(matching_prod_count) + str(label)) 
+        print(d.title()+ " (" + str(matching_prod_count) + str(label))
+    
+    breakpoint()
