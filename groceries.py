@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
     unique_dept.sort()
 
-    prod_dept_count  = 5
+    prod_dept_count = 5
 
     for d in unique_dept:
         matching_prods = [p for p in products if p["department"] == d]
