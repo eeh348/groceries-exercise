@@ -81,6 +81,3 @@ if __name__ == "__main__":
         else:
             label = " product)"
         print(d.title()+ " (" + str(matching_prod_count) + str(label))
-    
-    
-    #breakpoint()
